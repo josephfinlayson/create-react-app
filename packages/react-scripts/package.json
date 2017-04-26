@@ -1,8 +1,8 @@
 {
-  "name": "react-scripts",
-  "version": "0.9.4",
+  "name": "@josephfinlayson/react-scripts",
+  "version": "0.0.1",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "josephfinlayson/create-react-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
@@ -38,7 +38,7 @@
     "detect-port": "1.1.0",
     "dotenv": "2.0.0",
     "eslint": "3.16.1",
-    "eslint-config-react-app": "^0.6.1",
+    "eslint-config-prague": "^1.0.1",
     "eslint-loader": "1.6.0",
     "eslint-plugin-flowtype": "2.21.0",
     "eslint-plugin-import": "2.0.1",
