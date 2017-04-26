@@ -212,6 +212,8 @@ module.exports = {
             loader: require.resolve('css-loader'),
             options: {
               importLoaders: 1,
+              modules: 1,
+              localIdentName: '[name]__[local]___[hash:base64:5]'
             },
           },
           {
@@ -220,7 +222,7 @@ module.exports = {
               ident: 'postcss', // https://webpack.js.org/guides/migrating/#complex-options
               plugins: () => [
                 require('postcss-flexbugs-fixes'),
-                autoprefixer({
+                require("postcss-cssnext")({
                   browsers: [
                     '>1%',
                     'last 4 versions',
