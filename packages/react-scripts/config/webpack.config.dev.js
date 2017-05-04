@@ -193,6 +193,7 @@ module.exports = {
   // @remove-on-eject-end
   postcss: function() {
     return [
+        require("postcss-import")(),
         require("postcss-cssnext")(),
     ];
   },
