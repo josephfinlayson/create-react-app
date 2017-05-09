@@ -109,10 +109,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
-        include: [
-          paths.appSrc,
-          paths.appNodeModules + '/shared-components'
-        ],
+        include: paths.appSrc,
       }
     ],
     loaders: [
@@ -147,7 +144,10 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          paths.appNodeModules + '/shared-components'
+        ],
         loader: 'babel',
         query: {
           // @remove-on-eject-begin
