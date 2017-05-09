@@ -145,10 +145,7 @@ module.exports = {
             loader: require.resolve('eslint-loader'),
           },
         ],
-        include: [
-          paths.appSrc,
-          paths.appNodeModules + '/shared-components'
-        ],
+        include: paths.appSrc,
       },
       // ** ADDING/UPDATING LOADERS **
       // The "file" loader handles all assets unless explicitly excluded.
@@ -189,7 +186,10 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          paths.appNodeModules + '/shared-components'
+        ],
         loader: require.resolve('babel-loader'),
         options: {
           // @remove-on-eject-begin
