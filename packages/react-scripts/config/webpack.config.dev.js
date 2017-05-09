@@ -109,7 +109,10 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'eslint',
-        include: paths.appSrc,
+        include: [
+          paths.appSrc,
+          paths.appNodeModules + '/shared-components'
+        ],
       }
     ],
     loaders: [
