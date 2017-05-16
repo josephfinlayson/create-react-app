@@ -1,6 +1,6 @@
 {
   "name": "@josephfinlayson/react-scripts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Configuration and scripts for Create React App.",
   "repository": "josephfinlayson/create-react-app",
   "license": "BSD-3-Clause",
