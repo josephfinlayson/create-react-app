@@ -146,7 +146,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: [
           paths.appSrc,
-          paths.appNodeModules + '/shared-components'
+          paths.appNodeModules + '/react-shared-components'
         ],
         loader: 'babel',
         query: {
